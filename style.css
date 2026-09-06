@@ -61,3 +61,98 @@ img {
     max-width: 100%;
     height: auto;
 }
+/* ==================== HERO ==================== */
+
+#o-mnie {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 120px 10% 60px;
+}
+
+
+/* ==================== GŁÓWNY KONTENER ==================== */
+
+.hero-content {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 80px;
+
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* ==================== TEKST ==================== */
+
+.hero-text {
+    flex: 1;
+}
+
+
+.hero-subtitle {
+    margin-bottom: 25px;
+
+    font-size: 14px;
+    letter-spacing: 4px;
+
+    color: #888;
+}
+
+
+.hero-text h1 {
+    font-size: clamp(60px, 8vw, 130px);
+    line-height: 0.9;
+
+    letter-spacing: -5px;
+
+    margin-bottom: 40px;
+}
+
+
+.hero-description {
+    max-width: 550px;
+
+    font-size: 20px;
+    line-height: 1.6;
+
+    color: #aaa;
+}
+
+
+/* ==================== ZDJĘCIE ==================== */
+
+.hero-image {
+    flex: 0 0 400px;
+}
+
+
+.hero-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+}
+
+
+/* ==================== SCROLL ==================== */
+
+.scroll-indicator {
+    margin-top: 70px;
+
+    text-align: center;
+
+    font-size: 12px;
+    letter-spacing: 4px;
+
+    color: #666;
+}

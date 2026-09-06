@@ -31,11 +31,15 @@ nav {
 
     display: flex;
     justify-content: center;
+    align-items: center;
+
     gap: 40px;
 
     padding: 20px;
 
     background-color: rgba(10, 10, 10, 0.8);
+
+    z-index: 1000;
 }
 
 
@@ -61,7 +65,11 @@ img {
     max-width: 100%;
     height: auto;
 }
-/* ==================== HERO ==================== */
+
+
+/* ================================================== */
+/* ==================== HERO ======================== */
+/* ================================================== */
 
 #o-mnie {
     min-height: 100vh;
@@ -74,7 +82,7 @@ img {
 }
 
 
-/* ==================== GŁÓWNY KONTENER ==================== */
+/* ==================== GŁÓWNY KONTENER HERO ======= */
 
 .hero-content {
     display: flex;
@@ -90,7 +98,7 @@ img {
 }
 
 
-/* ==================== TEKST ==================== */
+/* ==================== TEKST HERO ================= */
 
 .hero-text {
     flex: 1;
@@ -127,7 +135,7 @@ img {
 }
 
 
-/* ==================== ZDJĘCIE ==================== */
+/* ==================== ZDJĘCIE HERO =============== */
 
 .hero-image {
     flex: 0 0 400px;
@@ -144,7 +152,7 @@ img {
 }
 
 
-/* ==================== SCROLL ==================== */
+/* ==================== SCROLL ===================== */
 
 .scroll-indicator {
     margin-top: 70px;
@@ -153,6 +161,219 @@ img {
 
     font-size: 12px;
     letter-spacing: 4px;
+
+    color: #666;
+}
+
+
+/* ================================================== */
+/* ==================== ZWYKŁE SEKCJE ============== */
+/* ================================================== */
+
+/*
+    Struktura:
+
+    section
+        └── section-content
+            ├── section-text
+            └── section-image
+*/
+
+.section-content {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 80px;
+
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+
+/* ==================== TEKST SEKCJI =============== */
+
+.section-text {
+    flex: 1;
+}
+
+
+.section-text h1 {
+    margin-bottom: 30px;
+
+    font-size: clamp(50px, 6vw, 90px);
+    line-height: 1;
+
+    letter-spacing: -3px;
+}
+
+
+.section-text p {
+    max-width: 600px;
+
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+/* ==================== ZDJĘCIE SEKCJI ============= */
+
+.section-image {
+    flex: 0 0 400px;
+}
+
+
+.section-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+}
+
+
+/* ================================================== */
+/* ==================== PROJEKTY =================== */
+/* ================================================== */
+
+/*
+    Struktura:
+
+    projects-list
+        ├── project
+        │   └── project-content
+        │       ├── project-media
+        │       └── project-info
+        │
+        ├── project
+        └── ...
+*/
+
+.projects-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 100px;
+
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 100px auto 0;
+}
+
+
+/* ==================== POJEDYNCZY PROJEKT ======== */
+
+.project {
+    width: 100%;
+}
+
+
+/* ==================== ZAWARTOŚĆ PROJEKTU ========= */
+
+.project-content {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 80px;
+}
+
+
+/* ==================== MEDIA PROJEKTU ============= */
+
+.project-media {
+    flex: 0 0 50%;
+}
+
+
+/* Obraz i film */
+
+.project-media img,
+.project-media video {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+
+/* ==================== INFORMACJE PROJEKTU ======== */
+
+.project-info {
+    flex: 1;
+}
+
+
+.project-info h2 {
+    margin-bottom: 25px;
+
+    font-size: 40px;
+    line-height: 1.1;
+}
+
+
+.project-info p {
+    margin-bottom: 15px;
+
+    font-size: 18px;
+    line-height: 1.6;
+
+    color: #aaa;
+}
+
+
+/* ================================================== */
+/* ==================== UMIEJĘTNOŚCI ============== */
+/* ================================================== */
+
+.skills-content {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 80px auto 0;
+}
+
+
+.skills-content p {
+    max-width: 1100px;
+
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+
+/* ================================================== */
+/* ==================== KONTAKT ==================== */
+/* ================================================== */
+
+#kontakt .section-text h2 {
+    margin-top: 35px;
+    margin-bottom: 10px;
+
+    font-size: 24px;
+}
+
+
+#kontakt .section-text p {
+    margin-bottom: 15px;
+}
+
+
+/* ================================================== */
+/* ==================== STOPKA ===================== */
+/* ================================================== */
+
+footer {
+    padding: 40px 10%;
+
+    text-align: center;
 
     color: #666;
 }

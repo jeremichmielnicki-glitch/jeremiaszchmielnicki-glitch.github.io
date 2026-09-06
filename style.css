@@ -62,9 +62,11 @@ section {
 
 /* ==================== ZDJĘCIA ==================== */
 
-img {
+img,
+video {
     max-width: 100%;
     height: auto;
+    border-radius: 12px;
 }
 
 
@@ -265,13 +267,6 @@ img {
     max-width: 1400px;
 
     margin: 100px auto 0;
-}
-
-
-/* ==================== POJEDYNCZY PROJEKT ======== */
-
-.project {
-    width: 100%;
 }
 
 

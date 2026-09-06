@@ -377,3 +377,91 @@ footer {
 
     color: #666;
 }
+
+/* ================================================== */
+/* ==================== TELEFON ==================== */
+/* ================================================== */
+
+@media (max-width: 768px) {
+
+    /* ==================== MENU ==================== */
+
+    nav {
+        gap: 15px;
+        padding: 15px 10px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+
+    /* ==================== SEKCJE ================= */
+
+    section {
+        padding: 100px 20px;
+    }
+
+
+    /* ==================== HERO =================== */
+
+    #o-mnie {
+        padding: 100px 20px 50px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(50px, 12vw, 80px);
+        letter-spacing: -3px;
+    }
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+    .hero-image {
+        flex: none;
+        width: 100%;
+        max-width: 400px;
+    }
+
+
+    /* ==================== ZWYKŁE SEKCJE ======== */
+
+    .section-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-text h1 {
+        font-size: clamp(45px, 11vw, 70px);
+    }
+
+    .section-image {
+        flex: none;
+        width: 100%;
+        max-width: 400px;
+    }
+
+
+    /* ==================== PROJEKTY ============== */
+
+    .project-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .project-media {
+        flex: none;
+        width: 100%;
+    }
+
+    .project-info h2 {
+        font-size: 30px;
+    }
+
+}

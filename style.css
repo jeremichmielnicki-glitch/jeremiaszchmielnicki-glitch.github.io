@@ -330,6 +330,29 @@ img {
 }
 
 
+/* ==================== SEPARATORY PROJEKTÓW ==================== */
+
+.project {
+    position: relative;
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+
+.project::after {
+    content: "";
+
+    display: block;
+
+    width: 70%;
+    height: 1px;
+
+    margin: 60px auto 0;
+
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+
 /* ================================================== */
 /* ==================== UMIEJĘTNOŚCI ============== */
 /* ================================================== */
